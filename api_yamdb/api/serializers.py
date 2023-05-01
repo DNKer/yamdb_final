@@ -2,11 +2,8 @@ from django.conf import settings
 from django.core.exceptions import ValidationError
 from django.http import Http404
 from rest_framework import serializers
-
-from reviews.models import (
-    ROLE_CHOICES, Category, Comment,
-    Genre, Review, Title, User,
-)
+from reviews.models import (ROLE_CHOICES, Category, Comment, Genre, Review,
+                            Title, User)
 
 
 class SignUpSerializer(serializers.ModelSerializer):

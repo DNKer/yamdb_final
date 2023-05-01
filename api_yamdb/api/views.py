@@ -1,3 +1,14 @@
+from api.filters import TitleFilter
+from api.mixins import ModelMixinSet
+from api.permissions import (AuthorOrStaffOrReadOnly, ChangeAdminOnly,
+                             StaffOrReadOnly)
+from api.serializers import (ActivationSerializer, AdminSerializer,
+                             CategorySerializer, CommentSerializer,
+                             GenreSerializer, ReviewsSerializer,
+                             SignUpSerializer, TitleCreateSerializer,
+                             TitleReciveSerializer, UsersSerializer)
+from auth.get_token import get_tokens_for_user
+from auth.send_code import send_mail_with_code
 from django.conf import settings
 from django.db import IntegrityError
 from django.db.models import Avg
@@ -8,23 +19,7 @@ from rest_framework.filters import SearchFilter
 from rest_framework.generics import get_object_or_404
 from rest_framework.response import Response
 from rest_framework.views import APIView
-
-from api.filters import TitleFilter
-from api.mixins import ModelMixinSet
-from api.permissions import (
-    ChangeAdminOnly, StaffOrReadOnly, AuthorOrStaffOrReadOnly
-)
-from api.serializers import (
-    ActivationSerializer, AdminSerializer, CategorySerializer,
-    CommentSerializer, GenreSerializer, ReviewsSerializer,
-    SignUpSerializer, TitleCreateSerializer,
-    TitleReciveSerializer, UsersSerializer
-)
-from auth.get_token import get_tokens_for_user
-from auth.send_code import send_mail_with_code
-from reviews.models import (
-    Category, Genre, Review, Title, User,
-)
+from reviews.models import Category, Genre, Review, Title, User
 
 
 class SignUp(APIView):

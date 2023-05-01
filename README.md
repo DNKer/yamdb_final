@@ -1,7 +1,7 @@
 # API_YAMDB
 REST API проект для сервиса YaMDb — сбор отзывов о фильмах, книгах или музыке.
 
-[![Django-app workflow] (https://github.com/dnker/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master&event=push)
+[![Django-app workflow] (https://github.com/dnker/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ## Описание.
 
