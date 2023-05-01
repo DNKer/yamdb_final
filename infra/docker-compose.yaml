@@ -9,7 +9,6 @@ services:
       - ./.env
 
   web:
-    build:
     image: dnker/api_yamdb-web:latest
     restart: always
     volumes:
@@ -22,7 +21,6 @@ services:
 
   nginx:
     image: nginx:1.21.3-alpine
-
     ports:
       - "80:80"
 
