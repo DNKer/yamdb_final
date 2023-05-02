@@ -46,7 +46,7 @@ jobs:
           with:
             context: ./api_yamdb/
             push: true
-            tags: ${{ str(secrets.DOCKER_USERNAME) }}/api_yamdb-web:latest
+            tags: ${{ secrets.DOCKER_USERNAME }}/api_yamdb-web:latest
   deploy:
       runs-on: ubuntu-latest
       needs: build_and_push_to_docker_hub
