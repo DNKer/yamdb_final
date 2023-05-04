@@ -10,8 +10,8 @@ SECRET_KEY = os.getenv('SECRET_KEY', default='secret_code_is_maybe_here')
 
 DEBUG = False
 
-ALLOWED_HOSTS = [ '146.185.209.153' ]
-#ALLOWED_HOSTS = [os.getenv('HOST', default='localhost')]
+ALLOWED_HOSTS = ['146.185.209.153']
+# ALLOWED_HOSTS = [os.getenv('HOST', default='localhost')]
 
 
 INSTALLED_APPS = [
