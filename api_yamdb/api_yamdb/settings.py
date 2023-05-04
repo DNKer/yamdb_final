@@ -1,5 +1,4 @@
 import os
-import socket
 from datetime import timedelta
 
 from dotenv import load_dotenv
@@ -10,10 +9,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = os.getenv('SECRET_KEY', default='secret_code_is_maybe_here')
 
-if socket.gethostname() != 'localhost':
-    DEBUG = False
-else:
-    DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [os.getenv('ALLOWED_HOSTS', default='*')]
 
