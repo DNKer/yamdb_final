@@ -21,9 +21,6 @@ jobs:
         python -m pip install --upgrade pip 
         pip install flake8 pep8-naming flake8-broken-line flake8-return flake8-isort
         pip install -r api_yamdb/requirements.txt
-        python3 api_yamdb/manage.py migrate
-        echo "from django.contrib.auth.models import User; User.objects.create_superuser('dnk', 'dnk@ya.ru', '87054Kc')" | python manage.py shell
-        python3 api_yamdb/manage.py collectstatic --no-input
 
     - name: Test with flake8 and django tests
       run: |
