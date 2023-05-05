@@ -11,8 +11,11 @@ SECRET_KEY = os.getenv('SECRET_KEY', default='secret_code_is_maybe_here')
 
 DEBUG = False
 
-ALLAWED_HOSTS = ['146.185.209.153',
-                 'localhost'
+ALLAWED_HOSTS = [
+    '146.185.209.153',
+    'localhost',
+    '127.0.0.1',
+    '*'
 ]
 # ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default='*')
 
