@@ -11,7 +11,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', default='secret_code_is_maybe_here')
 
 DEBUG = False
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default='localhost')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default='*')
 
 
 INSTALLED_APPS = [
@@ -117,7 +117,7 @@ DATABASES = {
         'USER': os.getenv('POSTGRES_USER', default='postgres'),
         'PASSWORD': os.getenv('POSTGRES_PASSWORD', default='postgres'),
         'HOST': os.getenv('DB_HOST', default='db'),
-        'PORT': os.getenv('DB_PORT', default=5432)
+        'PORT': os.getenv('DB_PORT', default='5432')
     }
 }
 
