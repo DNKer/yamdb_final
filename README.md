@@ -1,6 +1,8 @@
 # API_YAMDB
 
-## [REST API проект для сервиса YaMDb — сбор отзывов о фильмах, книгах или музыке.](http://yamdbdnk.ddns.net/ "перейти на сайт")
+## [REST API проект для сервиса YaMDb — сбор отзывов о фильмах, книгах или музыке.]
+
+Проект развернут по адресу: http://localhost:8000/redoc/
 
 ![workflow](https://github.com/dnker/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg?branch=master&event=push)
 
