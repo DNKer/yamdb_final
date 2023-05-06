@@ -1,13 +1,11 @@
 import os
 from datetime import timedelta
-from pathlib import Path
 
 from dotenv import load_dotenv
 
 load_dotenv()
 
-# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = os.getenv(
     'SECRET_KEY',
@@ -96,8 +94,7 @@ SIMPLE_JWT = {
 
 ROOT_URLCONF = 'api_yamdb.urls'
 
-# TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
-TEMPLATES_DIR = BASE_DIR / 'templates'
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -163,12 +160,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_DIRS = ((BASE_DIR / 'static/'),)
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
-MEDIAFILES_DIRS = ((BASE_DIR / 'media/'),)
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 AUTH_USER_MODEL = 'reviews.User'
 
