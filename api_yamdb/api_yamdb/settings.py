@@ -14,12 +14,12 @@ SECRET_KEY = os.getenv(
 
 DEBUG = False
 
-ALLAWED_HOSTS = []
-   # '146.185.209.153',
-   #'localhost',
-   # '127.0.0.1',
-   # '*'
-# ]
+ALLAWED_HOSTS = [
+    '146.185.209.153',
+    'localhost',
+    '127.0.0.1',
+    '*'
+]
 # ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default='*')
 
 
