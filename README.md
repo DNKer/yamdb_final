@@ -4,7 +4,7 @@
 
 Проект развернут по адресу: http://localhost:8000/redoc/
 
-![workflow](https://github.com/dnker/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg?branch=master&event=push)
+![workflow](https://github.com/DNKer/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master&event=push)
 
 ## Описание.
 
