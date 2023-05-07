@@ -16,9 +16,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     '146.185.209.153',
-    'localhost',
-    '127.0.0.1',
-    '*'
+    'yamdbdnk.ddns.net'
 ]
 # ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default='*')
 
