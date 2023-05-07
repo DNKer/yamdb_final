@@ -16,6 +16,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     '146.185.209.153',
+    'yamdbdnk.ddns.net',
     'localhost',
     '127.0.0.1',
     '*'
