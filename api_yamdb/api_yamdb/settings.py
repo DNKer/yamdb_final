@@ -14,11 +14,10 @@ SECRET_KEY = os.getenv(
 
 DEBUG = False
 
-ALLAWED_HOSTS = [
+ALLOWED_HOSTS = [
     '146.185.209.153',
     'localhost',
     '127.0.0.1',
-    'db',
     '*'
 ]
 # ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default='*')
