@@ -15,8 +15,7 @@ SECRET_KEY = os.getenv(
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '146.185.209.153',
-    'yamdbdnk.ddns.net'
+    '146.185.209.153'
 ]
 # ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default='*')
 
