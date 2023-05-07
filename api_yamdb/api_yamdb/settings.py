@@ -14,14 +14,11 @@ SECRET_KEY = os.getenv(
 
 DEBUG = False
 
-ALLOWED_HOSTS = [
-    '146.185.209.153',
-    'yamdbdnk.ddns.net',
-    'localhost',
-    '127.0.0.1',
-    '*'
-]
-# ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default='*')
+# ALLOWED_HOSTS = [
+#    '146.185.209.153',
+#    'yamdbdnk.ddns.net'
+# ]
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default='*')
 
 
 INSTALLED_APPS = [
